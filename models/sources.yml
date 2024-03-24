@@ -1,0 +1,76 @@
+version: 2
+
+sources:
+  - name: STAGING
+    database: RAW
+    schema: STAGING
+    tables:
+      - name: CANDIDATE_MASTER
+        columns:
+          - name: CAND_ID
+            tests:
+              - not_null
+  - name: STAGING
+    database: RAW
+    schema: STAGING
+    tables:
+      - name: CANDIDATE_COMMITTEE_LINKAGE
+        columns:
+          - name: CAND_ID
+            tests:
+              - not_null
+  - name: STAGING
+    database: RAW
+    schema: STAGING
+    tables:
+      - name: HOUSE_SENATE_CAMPAIGNS
+        columns:
+          - name: CAND_ID
+            tests:
+              - not_null
+  - name: STAGING
+    database: RAW
+    schema: STAGING
+    tables:
+      - name: INDI_CONTRI
+        columns:
+          - name: CMTE_ID
+            tests:
+              - not_null
+  - name: STAGING
+    database: RAW
+    schema: STAGING
+    tables:
+      - name: OPERATIING_EXPENSE
+        columns:
+          - name: CMTE_ID
+            tests:
+              - not_null
+  - name: STAGING
+    database: RAW
+    schema: STAGING
+    tables:
+      - name: PAC_SUMMARY
+        columns:
+          - name: CMTE_ID
+            tests:
+              - not_null
+  - name: STAGING
+    database: RAW
+    schema: STAGING
+    tables:
+      - name: TRANSACTION_PER_COMMITTEE
+        columns:
+          - name: CMTE_ID
+            tests:
+              - not_null
+  - name: STAGING
+    database: RAW
+    schema: STAGING
+    tables:
+      - name: COMMITTEE_MASTER
+        columns:
+          - name: CMTE_ID
+            tests:
+              - not_null
+

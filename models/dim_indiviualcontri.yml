@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_indiviualcontri
+    description: one row per indiviual contributor
+    columns:
+      - name: indiviual_contribution_key 
+        data_type: int 
+        description: The surrogate key of a particular indiviual contributor
+        #tests:
+          #- not_null
+      - name: indiviual_contribution_id
+        description: primary key of indiviual contribution table
+        #tests:
+          #- not_null

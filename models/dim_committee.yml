@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_committee
+    description: one row per committee
+    columns:
+      - name: cmte_key 
+        data_type: int 
+        description: The surrogate key of a particular committee
+        #tests:
+          #- not_null
+      - name: cmte_id
+        description: primary key of committee table
+        #tests:
+          #- not_null

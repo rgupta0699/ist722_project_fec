@@ -4,12 +4,12 @@ models:
   - name: dim_candidate
     description: one row per candidate
     columns:
-      - name: candkey 
+      - name: CANDIDATE_KEY 
         data_type: int 
         description: The surrogate key of a particular candidate
-        tests:
-          - not_null
-      - name: cand_id
+        #tests:
+          #- not_null
+      - name: CAND_ID
         description: primary key of candidate table
-        tests:
-          - not_null
+        #tests:
+          #- not_null

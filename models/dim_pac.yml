@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_pac
+    description: one row per pac
+    columns:
+      - name: pac_key 
+        data_type: int 
+        description: The surrogate key of a particular pac
+        #tests:
+          #- not_null
+      - name: pac_id
+        description: primary key of pac table
+        #tests:
+          #- not_null
